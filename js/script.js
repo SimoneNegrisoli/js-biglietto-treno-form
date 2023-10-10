@@ -18,15 +18,34 @@
 // Punto 1
 
     // Costanti
-    const nomeuser = document.getElementById('nomeuser');
 
-    const kmuser = document.getElementById('kmuser');
+    const submitButton = document.getElementById('submitbutton')
 
-    const age = document.getElementById('age');
+    const deleteButton = document.getElementById('deletebutton')
 
-    const ticketPrice = parseInt(0.21 * kmuser);
+    /**********************************************************/ 
+
+    // const nomeuser = document.getElementById('nomeuser');
+
+    // let kmuser = document.getElementById('kmuser');
+
+    // let age = document.getElementById('age');
+
+    let ticketPrice = parseInt(0.21 * kmuser);
+    console.log(ticketPrice)
 
     const discount20 = (ticketPrice * 0.2);
 
     const discount40 = (ticketPrice * 0.4);
 
+
+// Punto 2
+
+    submitButton.addEventListener('click',
+        function(){
+            let nomeuser = document.getElementById('nomeuser').value;
+            let kmuser = document.getElementById('kmuser').value;
+            let age = document.getElementById('age').value;
+
+        }    
+    )
