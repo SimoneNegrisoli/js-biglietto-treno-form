@@ -93,3 +93,14 @@
     )
 
     // Punto 3
+
+        resetButton.addEventListener('click',
+        
+            function(){
+                document.querySelector('.ticket').style.display = 'none';
+                document.getElementById('nomeuser').value = '';
+                document.getElementById('kmuser').value = '';
+                document.getElementById('age').value = 'Scegli';
+            }
+        
+        ) 
