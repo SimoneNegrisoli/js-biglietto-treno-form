@@ -3,7 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: sans-serif
+}
 #wrapper{
     width: 100%;
     height: 100vh;
+    background-color: #b9144f;
+}
+#containerdate .row{
+    width: 70%;
+    margin: 0 auto;
+}
+.form{
+    background-color: white;
+    border-radius: 10px;
+}
+.mytablebg{
+    background-color: white;
+    padding: 20px;
 }
