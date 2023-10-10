@@ -21,7 +21,7 @@
 
     const submitButton = document.getElementById('submitbutton')
 
-    const deleteButton = document.getElementById('deletebutton')
+    const resetButton = document.getElementById('resetbutton')
 
     // const over = document.getElementById('over')
 
@@ -33,6 +33,17 @@
 
     const discount40 = (ticketPrice * 0.4);
 
+    const nomepasseggero = document.querySelector('.nomepasseggero')
+
+    const costobiglietto = document.querySelector('.costobiglietto')
+
+    const offerta = document.querySelector('.offerta')
+
+    const carrozza = document.querySelector('.carrozza')
+
+    const codicecp = document.querySelector('.codicecp')
+
+
 
 // Punto 2
 
@@ -41,13 +52,16 @@
             let nomeuser = document.getElementById('nomeuser').value;
             let kmuser = document.getElementById('kmuser').value;
             let age = document.getElementById('age').value;
+
+            // controllo dati utenti
             if (nomeuser === '' || kmuser === '' || age === 'Scegli'){
                 alert('devi inserire valori validi!')
             } else if (isNaN(kmuser) || kmuser <= 0){
                 alert('metti chilometri validi!')
-            }
+            } else{
 
 
+            // prezzo
             ticketPrice = 0.21 * kmuser
 
             if (age === 'Minorenne (< 18)'){
@@ -56,7 +70,26 @@
             } else if  (age === 'Over (65>)') {
                 ticketPrice -= ticketPrice * 0.4;
             }
-                console.log(ticketPrice)
-           
+            
+            // costanti biglietto
+            const standard = 'Biglietto standard'
+            const numberCarrozza = Math.floor(Math.random() * 9) + 1;
+            const numberCodiceCp = Math.floor(10000 + Math.random() * 90000);
+
+            // stampa nel documento
+            nomepasseggero.textContent = nomeuser;
+            costobiglietto.textContent = ticketPrice.toFixed(2);
+            offerta.textContent = standard;
+            carrozza.textContent = numberCarrozza;
+            codicecp.textContent = numberCodiceCp;
+
+            document.querySelector('.ticket').style.display = 'block';
+
+            }
+
+            
+            
         }    
     )
+
+    // Punto 3

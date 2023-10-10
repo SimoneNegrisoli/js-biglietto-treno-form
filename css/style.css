@@ -23,3 +23,10 @@ body{
     background-color: white;
     padding: 20px;
 }
+.ticket{
+    display: none;
+}
+
+.result th{
+    height: 80px;
+}
