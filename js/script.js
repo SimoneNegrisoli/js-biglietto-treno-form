@@ -23,6 +23,7 @@
 
     const deleteButton = document.getElementById('deletebutton')
 
+    const maggiorenne = 
     /**********************************************************/ 
 
     // const nomeuser = document.getElementById('nomeuser');
@@ -31,12 +32,10 @@
 
     // let age = document.getElementById('age');
 
-    let ticketPrice = parseInt(0.21 * kmuser);
-    console.log(ticketPrice)
-
-    const discount20 = (ticketPrice * 0.2);
-
-    const discount40 = (ticketPrice * 0.4);
+    // let ticketPrice = parseInt(0.21 * kmuser);
+   
+    // const discount20 = (ticketPrice * 0.2);
+    // const discount40 = (ticketPrice * 0.4);
 
 
 // Punto 2
@@ -46,6 +45,6 @@
             let nomeuser = document.getElementById('nomeuser').value;
             let kmuser = document.getElementById('kmuser').value;
             let age = document.getElementById('age').value;
-
+            if (age === )
         }    
     )
