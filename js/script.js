@@ -23,19 +23,15 @@
 
     const deleteButton = document.getElementById('deletebutton')
 
-    const maggiorenne = 
-    /**********************************************************/ 
+    // const over = document.getElementById('over')
 
-    // const nomeuser = document.getElementById('nomeuser');
+    // const minorenne = document.getElementById('minorenne')
 
-    // let kmuser = document.getElementById('kmuser');
-
-    // let age = document.getElementById('age');
-
-    // let ticketPrice = parseInt(0.21 * kmuser);
+    let ticketPrice = 0
    
-    // const discount20 = (ticketPrice * 0.2);
-    // const discount40 = (ticketPrice * 0.4);
+    const discount20 = (ticketPrice * 0.2);
+
+    const discount40 = (ticketPrice * 0.4);
 
 
 // Punto 2
@@ -45,6 +41,22 @@
             let nomeuser = document.getElementById('nomeuser').value;
             let kmuser = document.getElementById('kmuser').value;
             let age = document.getElementById('age').value;
-            if (age === )
+            if (nomeuser === '' || kmuser === '' || age === 'Scegli'){
+                alert('devi inserire valori validi!')
+            } else if (isNaN(kmuser) || kmuser <= 0){
+                alert('metti chilometri validi!')
+            }
+
+
+            ticketPrice = 0.21 * kmuser
+
+            if (age === 'Minorenne (< 18)'){
+                 ticketPrice -= ticketPrice * 0.2;
+
+            } else if  (age === 'Over (65>)') {
+                ticketPrice -= ticketPrice * 0.4;
+            }
+                console.log(ticketPrice)
+           
         }    
     )
