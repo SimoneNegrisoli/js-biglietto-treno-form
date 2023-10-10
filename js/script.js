@@ -17,5 +17,16 @@
 
 // Punto 1
 
-const nomeuser = document.getElementById('nomeuser')
-control.log(document.getElementById('nomeuser'))
+    // Costanti
+    const nomeuser = document.getElementById('nomeuser');
+
+    const kmuser = document.getElementById('kmuser');
+
+    const age = document.getElementById('age');
+
+    const ticketPrice = parseInt(0.21 * kmuser);
+
+    const discount20 = (ticketPrice * 0.2);
+
+    const discount40 = (ticketPrice * 0.4);
+
