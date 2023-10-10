@@ -77,11 +77,15 @@
             const numberCodiceCp = Math.floor(10000 + Math.random() * 90000);
 
             // stampa nel documento
-            nomepasseggero.textContent = nomeuser;
-            costobiglietto.textContent = ticketPrice.toFixed(2);
-            offerta.textContent = standard;
-            carrozza.textContent = numberCarrozza;
-            codicecp.textContent = numberCodiceCp;
+            nomepasseggero.innerHTML = nomeuser;
+            costobiglietto.innerHTML = 
+            `
+            ${ticketPrice.toFixed(2)} ${'\u20AC'};
+            
+            `
+            offerta.innerHTML = standard;
+            carrozza.innerHTML = numberCarrozza;
+            codicecp.innerHTML = numberCodiceCp;
 
             document.querySelector('.ticket').style.display = 'block';
 

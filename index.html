@@ -13,21 +13,21 @@
 <body>
     <div id="wrapper">
         <div class="container">
-            <h1 class="text-center pt-4 text-light">Calcola il prezzo del tuo biglietto</h1>
-            <div class="form pt-4">
+            <h1 class="text-center pt-4 text-light fw-bold text-uppercase mb-4">Calcola il prezzo del tuo biglietto</h1>
+            <div class="form pt-4 shadow">
                 <div id="containerdate" class="container-fluid">
                     <div class="row align-items-center mt-2 gap-5">
                         <div class="col">
-                            <label for="nomeuser">Nome e Cognome</label>
-                            <input id="nomeuser" type="text" class="form-control" placeholder="Nome" aria-label="Nome">
+                            <label class="mb-2 text-danger fw-semibold" for="nomeuser">Nome e Cognome</label>
+                            <input id="nomeuser" type="text" class="form-control border-danger" placeholder="Nome" aria-label="Nome">
                         </div>
                         <div class="col">
-                            <label for="kmuser">Chilometri</label>
-                            <input id="kmuser" type="text" class="form-control" placeholder="km" aria-label="km">
+                            <label class="mb-2 text-danger fw-semibold" for="kmuser">Chilometri</label>
+                            <input id="kmuser" type="text" class="form-control border-danger" placeholder="km" aria-label="km">
                         </div>
                         <div class="col">
-                            <label for="age" class="form-label mb-0">Fascia d'et&agrave;</label>
-                            <select id="age" class="form-select">
+                            <label class="mb-2 text-danger fw-semibold" for="age" class="form-label mb-0">Fascia d'et&agrave;</label>
+                            <select id="age" class="form-select border-danger">
                                 <option selected>Scegli</option>
                                 <option id="minorenne">Minorenne (&#60; 18)</option>
                                 <option id="maggiorenne">Maggiorenne (18 &plus;)</option>
@@ -37,8 +37,8 @@
                     </div>
                     <div class="row mt-5 ">
                         <div class="col d-flex justify-content-center mb-5">
-                            <button id="submitbutton" type="button" class="btn btn-secondary me-4">Genera</button>
-                            <button id="resetbutton" type="button" class="btn btn-secondary">Annulla</button>
+                            <button id="submitbutton" type="button" class="btn bg-secondary-subtle me-4 text-danger">Genera</button>
+                            <button id="resetbutton" type="button" class="btn bg-secondary-subtle text-danger">Annulla</button>
                         </div>
                         
                     </div>
@@ -48,7 +48,7 @@
 
 
             <div class="ticket">
-                <h2 class="text-center pt-4 text-light">Il tuo biglietto</h2>
+                <h2 class="text-center pt-4 text-light text-uppercase fw-bold">Il tuo biglietto</h2>
                 <div class="mytablebg">
                     <table class="table ">
                     <thead>
